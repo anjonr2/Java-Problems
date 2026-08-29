@@ -14,7 +14,7 @@ public class BankSynchronizationDemo {
         try {
             Thread.sleep(1000);
         }catch (Exception e){
-            e.printStackTrace();;
+            e.printStackTrace();
         }
 
         balance = newBalance;
@@ -43,7 +43,7 @@ public class BankSynchronizationDemo {
         try {
             Thread.sleep(1000);
         }catch (Exception e){
-            e.printStackTrace();;
+            e.printStackTrace();
         }
 
         balance = newBalance;
@@ -94,7 +94,7 @@ public class BankSynchronizationDemo {
             bankAccount.synchronizedWithdraw(50);
         },"withdraw2");
 
-        deposit1.start();;
+        deposit1.start();
         deposit2.start();
         withdraw1.start();
         withdraw2.start();

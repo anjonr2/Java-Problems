@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class AtomicCounterExample {
     //AtomicInteger counter provides atomic methods for thread safe operations
-    private AtomicInteger counter = new AtomicInteger(0);
+    private final AtomicInteger counter = new AtomicInteger(0);
 
     //This method atomically increments the counter and prints updated value
     public void increment(){
@@ -23,7 +23,7 @@ public class AtomicCounterExample {
         //Each thread will perform 100 increments
         int incrementPerThread = 100;
 
-        Thread threads[] = new Thread[numberOfThreads];
+        Thread[] threads = new Thread[numberOfThreads];
         for (int i=0; i<numberOfThreads; i+=1){
             threads[i] = new Thread(()->{
                 for (int j=0; j<incrementPerThread; j+=1){

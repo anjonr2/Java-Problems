@@ -1,9 +1,9 @@
 package com.java.problem.streamApi;
 
 public class Employee {
-    private String name;
-    private String department;
-    private int salary;
+    private final String name;
+    private final String department;
+    private final int salary;
 
     public Employee(String name, String department, int salary) {
         this.name = name;

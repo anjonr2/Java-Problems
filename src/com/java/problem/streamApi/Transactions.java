@@ -1,8 +1,8 @@
 package com.java.problem.streamApi;
 
 public class Transactions {
-    private String category;
-    private int amount;
+    private final String category;
+    private final int amount;
 
     public Transactions(String category, int amount) {
         this.category = category;

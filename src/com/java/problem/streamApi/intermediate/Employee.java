@@ -1,10 +1,10 @@
 package com.java.problem.streamApi.intermediate;
 
 public class Employee {
-    private int id;
-    private String name;
+    private final int id;
+    private final String name;
     private String department;
-    private double salary;
+    private final double salary;
 
     public Employee(int id, String name, double salary) {
         this.id = id;
