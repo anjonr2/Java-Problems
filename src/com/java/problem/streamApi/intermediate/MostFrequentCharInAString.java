@@ -17,6 +17,6 @@ public class MostFrequentCharInAString  {
                 .entrySet()
                 .stream()
                 .max(Map.Entry.comparingByValue())
-                .orElseThrow()
+                .orElseThrow();
     }
 }
