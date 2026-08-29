@@ -286,7 +286,7 @@ public class PracticeProblems {
          * Operation should be fast
          */
 
-        Integer totalSalary = employees.parallelStream()
+        employees.parallelStream()
                 .map(employee -> employee.getSalary())
                 .reduce(0, (a, b) -> a + b);
 
